@@ -85,7 +85,7 @@ class ChatActivity : AppCompatActivity() {
     private fun apiCall(prompt: String) {
 
         val url = "https://api.groq.com/openai/v1/chat/completions"
-        val GROQ_API_KEY = BuildConfig.GROQ_API_KEY
+        val GROQ_API_KEY = "ADD_YOUR_API_KEY"
 
         val jsonBody = JSONObject().apply{
             put("messages", JSONArray().apply {
